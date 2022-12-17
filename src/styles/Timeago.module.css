@@ -1,0 +1,8 @@
+.timeago {
+    padding: .5rem 1rem;
+}
+
+.time {
+    font-size: .75rem;
+    color: var(--clr-n-300);
+}

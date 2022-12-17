@@ -1,0 +1,129 @@
+.view-post-modal {
+    width: min(80%, 2040px);
+    margin: 0 auto;
+    height: 85vh;
+    background-color: var(--clr-n-900);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid var(--clr-n-700);
+    border-radius: 4px;
+}
+
+.view-post__img {
+    height: inherit;
+}
+
+.view-post__img img {
+    width: 100%;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.view-post__caption img {
+    height: 40px;
+    width: 40px;
+}
+
+.view-post__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.view-post__caption {
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid var(--clr-n-700);
+}
+
+/* Comments */
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    flex-grow: 1;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.comments::-webkit-scrollbar {
+    display: none;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.comment-profile img {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.comment-c {
+    white-space: pre-wrap;
+}
+
+/* Likes */
+
+.likes {
+    display: flex;
+    flex-direction: column;
+    padding: .65rem 1rem;
+    gap: .65rem;
+    border-top: 1px solid var(--clr-n-700);
+}
+
+.post-reactions {
+    display: flex;
+    align-items: center;
+}
+
+.post-reactions .like-icon {
+    margin-right: .5rem;
+}
+
+p.likedby {
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .view-post-modal {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .view-post-modal {
+        width: 90%;
+        overflow-y: auto;
+        grid-template-columns: 1fr;
+        padding-bottom: 1rem;
+    }
+
+    .view-post__img {
+        height: 60vh;
+    }
+
+    .comments {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .view-post-modal {
+        width: 95vw;
+    }
+
+    .view-post__content .no-mobile {
+        display: none;
+    }
+}

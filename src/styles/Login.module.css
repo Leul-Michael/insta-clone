@@ -1,0 +1,74 @@
+.login {
+    padding: 1rem;
+}
+
+.login-container,
+.logo-container {
+    background-color: var(--clr-n-900);
+    box-shadow: 0 0 1px 1px var(--clr-n-700);
+    padding: 3rem 2rem;
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.logo-container a:focus {
+    border-radius: 5px;
+    border: 2px solid var(--clr-n-200);
+    padding: .25rem;
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logo-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.login-container .title {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--clr-n-300);
+    line-height: 1;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.logo-container.footer {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.logo-container .text {
+    color: var(--clr-n-300);
+}
+
+.logo-container .text a {
+    color: var(--clr-accent-secondary);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+
+    .login-container,
+    .logo-container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .login-container,
+    .logo-container {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
