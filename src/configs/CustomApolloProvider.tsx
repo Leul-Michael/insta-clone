@@ -1,11 +1,5 @@
 import { ReactNode } from "react"
-import {
-  ApolloClient,
-  InMemoryCache,
-  from,
-  HttpLink,
-  ApolloLink,
-} from "@apollo/client"
+import { ApolloClient, from } from "@apollo/client"
 import { store } from "../app/store"
 
 import { onError } from "@apollo/client/link/error"
