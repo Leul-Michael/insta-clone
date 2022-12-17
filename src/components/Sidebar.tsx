@@ -57,7 +57,7 @@ function Sidebar() {
           </div>
           <span>Home</span>
         </Link>
-        <Link to="/" className="sidebar-link">
+        <Link to="/search" className="sidebar-link">
           <div className="icon">
             <AiOutlineSearch />
           </div>

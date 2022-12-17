@@ -9,6 +9,7 @@ import Unauthorised from "./components/Unauthorised"
 import Profile from "./pages/Profile/Profile"
 import Wrapper from "./components/Wrapper"
 import EditProfile from "./pages/Profile/EditProfile"
+import Search from "./pages/Search/Search"
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
 
         <Route element={<PersistLogin />}>
           <Route element={<Wrapper />}>
-            <Route path="/" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="account/edit" element={<EditProfile />} />
             <Route path="account/:userId" element={<Profile />} />
+            <Route path="search" element={<Search />} />
           </Route>
         </Route>
       </Route>

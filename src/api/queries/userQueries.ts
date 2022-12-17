@@ -32,4 +32,21 @@ const GET_SUGGESTIONS = gql`
   }
 `
 
-export { GET_USER, GET_SUGGESTIONS }
+const SEARCH_USERS = gql`
+  query searchUsers($query: String!, $page: Int!) {
+    searchUsers(query: $query, page: $page) {
+      next {
+        page
+      }
+      prev {
+        page
+      }
+      results {
+        id
+        username
+      }
+    }
+  }
+`
+
+export { GET_USER, GET_SUGGESTIONS, SEARCH_USERS }
